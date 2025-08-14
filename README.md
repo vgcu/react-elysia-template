@@ -51,40 +51,40 @@ A modern, beautifully designed fullstack template with separate client and serve
 
 ```bash
 # Install all dependencies for both workspaces
-npm install
+bun install
 ```
 
 ## 🔧 Development
 
 ```bash
 # Start both client and server concurrently
-npm run dev
+bun dev
 
 # Start client only (port 3000)
-npm run dev:client
+bun dev:client
 
 # Start server only (port 3001)
-npm run dev:server
+bun dev:server
 ```
 
 ## 🛠️ Build
 
 ```bash
 # Build both workspaces
-npm run build
+bun run build
 
 # Build client only
-npm run build:client
+bun build:client
 
 # Build server only
-npm run build:server
+bun build:server
 ```
 
 ## 🧪 Linting
 
 ```bash
 # Lint both workspaces
-npm run lint
+bun run lint
 ```
 
 ## 🎨 Design System
@@ -138,10 +138,10 @@ You can run commands in specific workspaces using:
 
 ```bash
 # Run command in client workspace
-npm run <command> --workspace=client
+bun --filter='client' run <command>
 
 # Run command in server workspace  
-npm run <command> --workspace=server
+bun --filter='server' run <command>
 ```
 
 ## 🎯 Key Highlights
