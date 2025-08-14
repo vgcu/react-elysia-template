@@ -1,0 +1,36 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "@biomejs/biome lint src/",
+    "lint:fix": "@biomejs/biome lint --write src/",
+    "format": "@biomejs/biome format --write src/",
+    "check": "@biomejs/biome check --write src/",
+    "preview": "vite preview",
+    "clean": "rm -rf dist node_modules/.vite"
+  },
+  "dependencies": {
+    "@mantine/core": "^8.2.4",
+    "@mantine/hooks": "^8.2.4",
+    "@mantine/notifications": "^8.2.4",
+    "@tabler/icons-react": "^3.29.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "swr": "^2.3.6",
+    "valtio": "^2.1.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.4",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "postcss": "^8.5.1",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
+    "vite": "^7.1.2"
+  }
+}

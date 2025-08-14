@@ -1,0 +1,11 @@
+{
+    "api": {
+        "base": "/api",
+        "endpoints": {
+            "getUser": "/user",
+            "createUser": "/user",
+            "updateUser": "/user",
+            "deleteUser": "/user"
+        }
+    }
+}

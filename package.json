@@ -1,0 +1,25 @@
+{
+  "name": "react-elysia-template",
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "bun --filter='*' dev",
+    "dev:client": "bun --filter='client' run dev",
+    "dev:server": "bun --filter='server' run dev",
+    "build": "bun run build:client && bun run build:server",
+    "build:client": "bun --filter='client' run build",
+    "build:server": "bun --filter='server' run build",
+    "package": "rm -rf dist && mkdir -p dist && cp -r client/dist/* dist/ && cp -r server/dist/* dist/ && cp -r server/resources dist/resources && cp .env dist/",
+    "lint": "bun run lint --workspace=client && bun run lint --workspace=server",
+    "format": "bun run format --workspace=client",
+    "check": "bun run check --workspace=client",
+    "clean": "bun --filter='*' clean"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
