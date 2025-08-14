@@ -13,7 +13,7 @@ const app = new Elysia()
     
     // Serve frontend files from root
     .use(staticPlugin({
-        assets: './',
+        assets: 'public',
         prefix: '/',
         indexHTML: true,
     }))

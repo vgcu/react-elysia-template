@@ -1,9 +1,9 @@
 import { Container, Box, Stack, useMantineColorScheme } from '@mantine/core';
-import { Header } from './components/Header';
-import { WorkspaceOverview } from './components/WorkspaceOverview';
-import { ServerStatus } from './components/ServerStatus';
-import { UsersData } from './components/UsersData';
-import { GettingStarted } from './components/GettingStarted';
+import { Header } from '@/components/Header';
+import { WorkspaceOverview } from '@/components/WorkspaceOverview';
+import { ServerStatus } from '@/components/ServerStatus';
+import { UsersData } from '@/components/UsersData';
+import { GettingStarted } from '@/components/GettingStarted';
 
 function App() {
     const { colorScheme } = useMantineColorScheme();
@@ -21,7 +21,7 @@ function App() {
             }}
         >
             <Container size="xl" py={40}>
-                <Stack gap={40}>
+                <Stack gap={20}>
                     <Header />
                     <WorkspaceOverview />
                     <ServerStatus />

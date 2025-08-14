@@ -13,7 +13,7 @@
     "build": "bun run build:client && bun run build:server",
     "build:client": "bun --filter='client' run build",
     "build:server": "bun --filter='server' run build",
-    "package": "rm -rf dist && mkdir -p dist && cp -r client/dist/* dist/ && cp -r server/dist/* dist/ && cp -r server/resources dist/resources && cp .env dist/",
+    "package": "rm -rf dist && mkdir -p dist && cp -r client/dist dist/public && cp -r server/dist/* dist/ && cp -r server/resources dist/resources && cp .env dist/",
     "lint": "bun run lint --workspace=client && bun run lint --workspace=server",
     "format": "bun run format --workspace=client",
     "check": "bun run check --workspace=client",

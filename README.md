@@ -1,6 +1,6 @@
 # Fullstack TypeScript Template
 
-A modern, beautifully designed fullstack template with separate client and server workspaces, built with TypeScript throughout. Features a polished UI with Mantine components and modern design patterns.
+A fullstack template with separate client and server workspaces, built with TypeScript throughout. Features a polished UI with Mantine components and modern design patterns.
 
 ## 🏗️ Project Structure
 
